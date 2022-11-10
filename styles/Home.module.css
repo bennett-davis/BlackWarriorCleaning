@@ -1,0 +1,155 @@
+.container {
+  padding: 0 2rem;
+}
+
+.indexContainer {
+  background-color: rgb(135, 23, 23);
+  width: 100%;
+  padding: 2rem 4rem;
+  border-radius: 10px;
+}
+
+.headerContainer {
+  align-items: center;
+  justify-content: center;
+   display: flex;
+  flex-direction: column;
+  padding: 4rem 0rem
+}
+
+.carousel {
+  padding: 0 0 2rem 0;
+}
+
+.main {
+  min-height: 100vh;
+  padding: 2rem 0rem;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+
+}
+
+.main h1 {
+ font-weight: bolder;
+ font-size: 4rem;
+ }
+.main h2 {
+  font-weight: bold;
+ }
+
+.main h4 {
+  color: grey;
+  padding-bottom: 2rem;
+}
+
+.footer {
+  display: flex;
+  flex: 1;
+  padding: 2rem 0;
+  border-top: 1px solid #eaeaea;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+}
+
+.title a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+.title a:hover,
+.title a:focus,
+.title a:active {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  line-height: 1.15;
+  font-size: 4rem;
+}
+
+.title,
+.description {
+  text-align: center;
+}
+
+.description {
+  margin: 4rem 0;
+  line-height: 1.5;
+  font-size: 1.5rem;
+}
+
+.code {
+  background: #fafafa;
+  border-radius: 5px;
+  padding: 0.75rem;
+  font-size: 1.1rem;
+  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
+    Bitstream Vera Sans Mono, Courier New, monospace;
+}
+
+.grid {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 800px;
+}
+
+.card {
+   
+  padding: 1rem;
+  text-align: left;
+  color: inherit;
+}
+
+.card2 {
+  margin: 1rem;
+  padding: 1rem;
+  text-align: center;
+  color: white;
+}
+
+.card2 h3 {
+  color: rgb(181, 174, 174)
+}
+
+.card3 {
+  position: relative;
+  padding: 1rem;
+  text-align: left;
+  color: inherit;
+}
+
+.card3test {
+  padding: 5.5rem 2rem;
+  text-align: center;
+  align-items: center;
+  align-self: auto;
+  flex-direction: column;
+ }
+
+
+.logo {
+  height: 1em;
+  margin-left: 0.5rem;
+}
+
+@media (max-width: 600px) {
+  .grid {
+    width: 100%;
+    flex-direction: column;
+  }
+}
+

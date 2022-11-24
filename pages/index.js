@@ -22,6 +22,19 @@ export default function Home() {
   const phone = "(205)-861-3320"
   const email = "BlackWarriorCleaningPros@gmail.com"
 
+  const galleryList = [
+    "/assets/gallery/wash1.jpg",
+    "/assets/gallery/wash2.jpg",
+    "/assets/gallery/wash3.jpg",
+
+    "/assets/gallery/car1.jpg",
+    "/assets/gallery/car2.jpg",
+    "/assets/gallery/car3.jpg",
+
+    "/assets/gallery/janitorial1.jpg",
+    "/assets/gallery/janitorial2.jpg",
+  ]
+
   const cardList = [
     
     {
@@ -89,66 +102,20 @@ export default function Home() {
             <h3>Gallery</h3>
             <div className={styles.divider4}/>
             
+            <div>
+                <Row>
+                  {galleryList.map((picture, index) => GalleryPicture(picture, index))}
+              </Row>
+            </div>
+            
             
 
               
           </div>
 
 
-
-
       </main>
-
-      {/* FOOTER  */}
-      <footer className={styles.footer}>
-
-        <div className={styles.footerInfo}>
-          <Image
-            src="/assets/BWCPwhite.PNG"
-            alt="Black Warrior Cleaning Pros LLC"
-            layout="fixed"
-            width={300}
-            height={75}
-          />
-          {/* <h4 >Black Warrior Cleaning Pros LLC</h4> */}
-          <div className={styles.divider4}/>
-          <p>{email}</p>
-          <p>{phone}</p>
-        </div>
-        
-
-        <div>
-        <a href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank">
-          <Image className={styles.footerImage}
-            src="/assets/instawhite.png"
-            alt="Instagram logo"
-            layout='fixed'
-            height={30}
-            width={30}
-          />
-        </a>
-        <a href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank">
-          <Image className={styles.footerImage}
-            src="/assets/ttwhite.png"
-            alt="Instagram logo"
-            layout='fixed'
-            height={30}
-            width={30}
-          />
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank">
-          <Image className={styles.footerImage}
-            src="/assets/fb.png"
-            alt="Instagram logo"
-            layout='fixed'
-            height={30}
-            width={30}
-          />
-        </a>
-        </div>
-        
-        
-      </footer>
+      
     </div>
   )
 }
@@ -158,7 +125,7 @@ export default function Home() {
 export function CustomCard ( card ) {
   return (
     
-    <Col className={styles.card}>
+    <Col className={styles.card} xs="12" lg="4">
       
       <h2>{card.cardName}</h2>
       <a href={card.link}>
@@ -193,5 +160,25 @@ export function CustomCard ( card ) {
     </Col>
     
         
+  )
+}
+
+export function GalleryPicture(picture, index) {
+   return (
+
+      <Col className={styles.galleryCol} xs="12"  md="6" lg="4">=
+        <div className={styles.galleryImageShadow}>
+          <Image className={styles.galleryImage}
+            alt="Sample"
+            src={picture}
+            width={450}
+            height={450}
+            quality={100}
+            layout="intrinsic" 
+          />
+        </div>
+        
+      </Col>
+   
   )
 }

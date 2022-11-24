@@ -76,6 +76,13 @@
   background-color: rgb(135, 23, 23);
 }
 
+.divider5 {
+  width: 50%;
+  height: 4px;
+  margin: .5rem;
+  background-color: rgb(135, 23, 23);
+}
+
 
 .main {
   min-height: 100vh;
@@ -140,7 +147,7 @@
 .headerContainerSoftwash {
   
   align-items: center;
-  justify-content: space-evenly;
+  justify-content: center;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -164,8 +171,7 @@
 }
 
 .softwash h3 {
-  font-weight: bold;
-  display: flex;
+   display: flex;
   justify-content: center;
 }
 
@@ -259,6 +265,7 @@
 }
 
 .gallery {
+  width: 90%;
   padding: 8rem 0rem;
   justify-content: center;
   align-items: center;
@@ -266,7 +273,41 @@
   flex-direction: column;
 }
 
-.galleryRow {
-  flex-direction: row;
+.galleryCol{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
 }
  
+
+.galleryImage {
+  background-size: cover;
+  display: block;
+  border-radius: 10px;
+ }
+
+ .galleryImageShadow {
+  box-shadow: 2px 5px 5px #828282;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+ }
+ 
+.softwashHeader {
+  background-color: rgb(135, 23, 23);
+  padding: 2rem;
+  color: white;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.softWashServices {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

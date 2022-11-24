@@ -1,6 +1,7 @@
 import '../styles/globals.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import CustomNavbar from '../components/CustomNavbar'
+import CustomFooter from '../components/CustomFooter'
  
 
 function MyApp({ Component, pageProps }) {
@@ -9,6 +10,7 @@ function MyApp({ Component, pageProps }) {
     <>
       <CustomNavbar/>
       <Component {...pageProps} />
+      <CustomFooter/>
     </>
   )
 }

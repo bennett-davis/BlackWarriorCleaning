@@ -5,6 +5,8 @@ import {Row, Col} from 'reactstrap'
 
 export default function SoftWash () {
 
+    const phone = "(205)-861-3320"
+    const email = "BlackWarriorCleaningPros@gmail.com"
     const soft_wash_description = "Soft Washing is an innovative cleaning process used on the exterior of homes or buildings, using a safe mixture of chemicals that work better than traditional pressure washing techniques. Algae and other types of buildup are mother nature's way of decomposing materials. That is why it is imperative to maintain property maintenance and cleanliness in order for it to always look nice and last. We achieve not only a clean surface, but also a deeper clean that kills bad organic buildup down in the pores of the surface. This results in longer lasting clean surfaces. "
 
     return (
@@ -16,9 +18,33 @@ export default function SoftWash () {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <h1>Home Soft Washing</h1>
+            <div className={styles.softwashHeader}>
+                <h1>Home Soft Washing</h1>
+                <h3>Get A Quote</h3>
+                <h5>{phone} | {email}</h5>
+            </div>
+            
 
             <Row className={styles.headerContainerSoftwash}>
+                    <Image  
+                        alt="Sample"
+                        src="/assets/dirty_house_softwash.jpg"
+                        width="550px"
+                        height="350px"
+                        quality={100}
+                        layout="fixed" 
+                    />
+                    <Image  
+                        alt="Sample"
+                        src="/assets/clean_house_softwash.jpg"
+                        width="550px"
+                        height="350px"
+                        quality={100}
+                        layout="fixed" 
+                    />
+            </Row>
+
+            {/* <Row className={styles.headerContainerSoftwash}>
                 <Col>
                     <h3>Roof Wash</h3>
                     <Image className={styles.image}
@@ -65,10 +91,46 @@ export default function SoftWash () {
                 </Col>
                 
     
-            </Row>
-                
-            <h4>About Soft Washing</h4>
-            <p>{soft_wash_description}</p>
+            </Row> */}
+
+            
+            
+            <div className={styles.about}>
+                <h3>About Soft Washing</h3>
+                <div className={styles.divider5}/>
+                <p>{soft_wash_description}</p>
+            </div>
+            
+
+            <div className={styles.softWashServices}>
+                <h2>Soft Wash Services</h2>
+                <div className={styles.divider3}/>
+                <Row>
+                    <Col>
+                        <p>Roof</p>
+                        <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
+                    </Col>
+                    <Col>
+                        <p>Siding</p>
+                        <p>Soft wash formula specific to the type of siding that you have, whether painted wood, vinyl, masonry or anything in between. </p>
+                    </Col>
+                    <Col>
+                        <p>Gutter</p>
+                        <p>Soft wash technique to clean the visible portions of your gutters and bring them back to life. </p>
+
+                    </Col>
+                    <Col>
+                        <p>Flatwork</p> 
+                        <p>Remove organic buildup from sidewalks and driveways to maintain the look and integrity of your home or business.  </p>
+
+                    </Col>
+                    <Col>
+                        <p>Fence</p>
+                        <p>Soft wash formula specific to get deep in the wood grain. This will clean and protect the wood without risking any cracking. </p>
+
+                    </Col>
+                </Row>
+            </div>
 
         </div>
         

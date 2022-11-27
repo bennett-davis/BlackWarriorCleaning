@@ -105,26 +105,26 @@ export default function SoftWash () {
             <div className={styles.softWashServices}>
                 <h2>Soft Wash Services</h2>
                 <div className={styles.divider3}/>
-                <Row>
-                    <Col>
-                        <p>Roof</p>
+                <Row className={styles.swRow}>
+                    <Col className={styles.serviceBox} xs="12" lg="5">
+                        <h4>Roof</h4>
                         <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
                     </Col>
-                    <Col>
+                    <Col className={styles.serviceBox} xs="12" lg="5">
                         <p>Siding</p>
                         <p>Soft wash formula specific to the type of siding that you have, whether painted wood, vinyl, masonry or anything in between. </p>
                     </Col>
-                    <Col>
+                    <Col className={styles.serviceBox} xs="12" lg="5">
                         <p>Gutter</p>
                         <p>Soft wash technique to clean the visible portions of your gutters and bring them back to life. </p>
 
                     </Col>
-                    <Col>
+                    <Col className={styles.serviceBox} xs="12" lg="5">
                         <p>Flatwork</p> 
                         <p>Remove organic buildup from sidewalks and driveways to maintain the look and integrity of your home or business.  </p>
 
                     </Col>
-                    <Col>
+                    <Col className={styles.serviceBox} xs="12" lg="5">
                         <p>Fence</p>
                         <p>Soft wash formula specific to get deep in the wood grain. This will clean and protect the wood without risking any cracking. </p>
 

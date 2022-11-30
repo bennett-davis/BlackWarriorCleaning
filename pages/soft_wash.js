@@ -108,28 +108,34 @@ export default function SoftWash () {
                 <Row className={styles.swRow}>
                     <Col className={styles.serviceBox} xs="12" lg="5">
                         <h4>Roof</h4>
-                        <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
+                         <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
-                        <p>Siding</p>
-                        <p>Soft wash formula specific to the type of siding that you have, whether painted wood, vinyl, masonry or anything in between. </p>
+                        <h4>Siding</h4>
+                         <p>Soft wash formula specific to the type of siding that you have, whether painted wood, vinyl, masonry or anything in between. </p>
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
-                        <p>Gutter</p>
-                        <p>Soft wash technique to clean the visible portions of your gutters and bring them back to life. </p>
+                        <h4>Gutter</h4>
+                         <p>Soft wash technique to clean the visible portions of your gutters and bring them back to life. </p>
 
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
-                        <p>Flatwork</p> 
-                        <p>Remove organic buildup from sidewalks and driveways to maintain the look and integrity of your home or business.  </p>
+                        <h4>Flatwork</h4> 
+                         <p>Remove organic buildup from sidewalks and driveways to maintain the look and integrity of your home or business.  </p>
 
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
-                        <p>Fence</p>
-                        <p>Soft wash formula specific to get deep in the wood grain. This will clean and protect the wood without risking any cracking. </p>
-
+                        <h4>Fence</h4>
+                         <p>Soft wash formula specific to get deep in the wood grain. This will clean and protect the wood without risking any cracking. </p>
                     </Col>
                 </Row>
+
+                <div className={styles.softWashContact}>
+                    <h2>Contact Us</h2>
+                    <div className={styles.divider6}/>
+                    <h2>{phone}</h2>
+                    <h2>{email}</h2>
+                </div>
             </div>
 
         </div>

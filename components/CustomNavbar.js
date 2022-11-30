@@ -30,13 +30,13 @@ function CustomNavbar(args) {
           <div class="collapse navbar-collapse" id="navbarText">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link " aria-current="page" href="/contact">Car Detailing</a>
+                <a class="nav-link " aria-current="page" href="/car_detailing">Car Detailing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/services">Soft Washing</a>
+                <a class="nav-link" href="/soft_wash">Soft Washing</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="/services">Home Cleaning</a>
+                <a class="nav-link" href="/interior_cleaning">Interior Cleaning</a>
               </li>
                
             </ul>

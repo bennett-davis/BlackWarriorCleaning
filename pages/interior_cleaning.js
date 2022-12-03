@@ -2,12 +2,20 @@ import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
 import {Row, Col} from 'reactstrap'
+import { GalleryPicture } from '.'
 
 export default function InteriorCleaning () {
 
     const phone = "(205)-861-3320"
     const email = "BlackWarriorCleaningPros@gmail.com"
-    const interior_description = "PUT DESCRIPTION HERE BLAH BLAH BLAH BLAH OR PICTURES"
+    const interior_description = "Deep clean offers an interior top to bottom clean including wiping down walls, fans, and baseboards, scrubbing the bathrooms, wiping down all countertops and kitchen appliances, dusting, sweeping/vacuuming, and mopping. A regular clean offers a less detailed interior cleaning including wiping down bathrooms, all countertops, dusting, sweeping/vacuuming and mopping. These can be scheduled on a reoccurring bases for a discounted rate. Specialty cleaning and set ups for Airbnb or rental properties are available. "
+
+    const galleryList = [
+        "/assets/clean_interior1.jpg",
+        "/assets/clean_interior2.jpg",
+        "/assets/clean_interior3.jpg",
+    ]
+    
 
     return (
         
@@ -18,45 +26,62 @@ export default function InteriorCleaning () {
                 <link rel="icon" href="/favicon.ico" />
             </Head>
 
-            <div className={styles.softwashHeader}>
-                <h1>Interior Home Cleaning</h1>
-                <h3>Get A Quote</h3>
-                <h5>{phone} | {email}</h5>
-            </div>
-            
- 
-            
-            <div className={styles.about}>
-                <h3>Interior Services</h3>
-                <div className={styles.divider5}/>
-                <p>{interior_description}</p>
-            </div>
-            
+            <main className={styles.main}>
 
-            <div className={styles.softWashServices}>
-                <h2>Interior Services</h2>
-                <div className={styles.divider3}/>
-                <Row className={styles.swRow}>
-                    <Col className={styles.serviceBox} xs="12" lg="5">
-                        <h4>Roof</h4>
-                         <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
-                    </Col>
-                    <Col className={styles.serviceBox} xs="12" lg="5">
-                        <h4>Siding</h4>
-                         <p>Soft wash formula specific to the type of siding that you have, whether painted wood, vinyl, masonry or anything in between. </p>
-                    </Col>
-                     
+                <div className={styles.softwashHeader}>
+                    <h1>Interior Home Cleaning</h1>
+                    <h3>Get A Quote</h3>
+                    <h5>{phone} | {email}</h5>
+                </div>
+                
+    
+                
+                {/* <div className={styles.about}>
+                    <h3>Interior Services</h3>
+                    <div className={styles.divider5}/>
+                    <p>{interior_description}</p>
+                </div> */}
+                
+
+                <div className={styles.softWashServices}>
+                    <h2>Service Types</h2>
+                     <Row className={styles.swRow}>
+                        <Col className={styles.serviceBox} xs="12" lg="5">
+                            <h4>Deep Clean</h4>
+                            <p>Deep clean offers an interior top to bottom clean including wiping down walls, fans, and baseboards, scrubbing the bathrooms, wiping down all countertops and kitchen appliances, dusting, sweeping/vacuuming, and mopping.</p>
+                        </Col>
+                        <Col className={styles.serviceBox} xs="12" lg="5">
+                            <h4>Regular Clean</h4>
+                            <p>A regular clean offers a less detailed interior cleaning including wiping down bathrooms, all countertops, dusting, sweeping/vacuuming and mopping. </p>
+                        </Col>
+                    </Row>
+
+                    <p>These can be scheduled on a reoccurring bases for a discounted rate. Specialty cleaning and set ups for Airbnb or rental properties are available.</p>
+
                     
-                </Row>
+                </div>
+                
+                <div className={styles.gallery2}>
+                    <h3>Gallery</h3>
+                    <div className={styles.divider4}/>
+                    
+                    <div>
+                        <Row>
+                            {galleryList.map((picture, index) => GalleryPicture(picture, index))}
+                        </Row>
+                    </div>
+                
+                </div>
 
                 <div className={styles.softWashContact}>
-                    <h2>Contact Us</h2>
+                    <h2>Request A Quote</h2>
                     <div className={styles.divider6}/>
                     <h2>{phone}</h2>
                     <h2>{email}</h2>
                 </div>
-            </div>
 
+              
+            </main>
         </div>
         
     )

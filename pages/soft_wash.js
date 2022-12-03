@@ -26,74 +26,24 @@ export default function SoftWash () {
             
 
             <Row className={styles.headerContainerSoftwash}>
-                    <Image  
-                        alt="Sample"
-                        src="/assets/dirty_house_softwash.jpg"
-                        width="550px"
-                        height="350px"
-                        quality={100}
-                        layout="fixed" 
-                    />
-                    <Image  
-                        alt="Sample"
-                        src="/assets/clean_house_softwash.jpg"
-                        width="550px"
-                        height="350px"
-                        quality={100}
-                        layout="fixed" 
-                    />
+                <Image  
+                    alt="Sample"
+                    src="/assets/dirty_house_softwash.jpg"
+                    width="550px"
+                    height="350px"
+                    quality={100}
+                    layout="fixed" 
+                />
+                <Image  
+                    alt="Sample"
+                    src="/assets/clean_house_softwash.jpg"
+                    width="550px"
+                    height="350px"
+                    quality={100}
+                    layout="fixed" 
+                />
             </Row>
 
-            {/* <Row className={styles.headerContainerSoftwash}>
-                <Col>
-                    <h3>Roof Wash</h3>
-                    <Image className={styles.image}
-                        alt="Sample"
-                        src="/assets/clean_house.jpg"
-                        width="350px"
-                        height="350px"
-                        quality={100}
-                        layout="fixed" 
-                    />
-                </Col>
-                <Col>
-                    <h3>Siding Wash</h3>
-                    <Image className={styles.image}
-                        alt="Sample"
-                        src="/assets/clean_house.jpg"
-                        width="350px"
-                        height="350px"
-                        quality={100}
-                        layout="fixed" 
-                    />  
-                </Col> 
-                <Col> 
-                    <h3>Flatwork Wash</h3>
-                    <Image className={styles.image}
-                        alt="Sample"
-                        src="/assets/clean_house.jpg"
-                        width="350px"
-                        height="350px"
-                        quality={100}
-                        layout="fixed" 
-                    />
-                </Col> 
-                <Col>  
-                    <h3>Fence Wash</h3>  
-                    <Image className={styles.image}
-                        alt="Sample"
-                        src="/assets/clean_house.jpg"
-                        width="350px"
-                        height="350px"
-                        quality={100}
-                        layout="fixed" 
-                    />    
-                </Col>
-                
-    
-            </Row> */}
-
-            
             
             <div className={styles.about}>
                 <h3>About Soft Washing</h3>
@@ -108,25 +58,35 @@ export default function SoftWash () {
                 <Row className={styles.swRow}>
                     <Col className={styles.serviceBox} xs="12" lg="5">
                         <h4>Roof</h4>
-                         <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
+                        <div className={styles.divider6}/>
+                        <p>We use a safe mixture of mild chemicals and low water pressure to remove organic buildup. This increases the condition and lifetime of your roof without damaging your shingles or metal work. </p>
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
                         <h4>Siding</h4>
+                        <div className={styles.divider6}/>
                          <p>Soft wash formula specific to the type of siding that you have, whether painted wood, vinyl, masonry or anything in between. </p>
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
                         <h4>Gutter</h4>
+                        <div className={styles.divider6}/>
                          <p>Soft wash technique to clean the visible portions of your gutters and bring them back to life. </p>
 
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
-                        <h4>Flatwork</h4> 
+                        <h4>Flatwork</h4>
+                        <div className={styles.divider6}/> 
                          <p>Remove organic buildup from sidewalks and driveways to maintain the look and integrity of your home or business.  </p>
 
                     </Col>
                     <Col className={styles.serviceBox} xs="12" lg="5">
                         <h4>Fence</h4>
+                        <div className={styles.divider6}/>
                          <p>Soft wash formula specific to get deep in the wood grain. This will clean and protect the wood without risking any cracking. </p>
+                    </Col>
+                    <Col className={styles.serviceBox} xs="12" lg="5">
+                        <h4>Window Wash</h4>
+                        <div className={styles.divider6}/>
+                         <p>Commercial or residential service offered with options including exterior only, interior only, or exterior and interior.</p>
                     </Col>
                 </Row>
 

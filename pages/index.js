@@ -33,6 +33,7 @@ export default function Home() {
 
     "/assets/gallery/janitorial1.jpg",
     "/assets/gallery/janitorial2.jpg",
+    "/assets/clean_interior2.jpg"
   ]
 
   const cardList = [
@@ -51,9 +52,9 @@ export default function Home() {
     },
     { 
       cardName : "Interior Home Cleaning",
-      img: "/assets/tub.jpg",
+      img: "/assets/clean_interior1.jpg",
       description: "Interior services",
-      link: "/soft_wash"
+      link: "/interior_cleaning"
 
     }
   ]
@@ -108,9 +109,6 @@ export default function Home() {
               </Row>
             </div>
             
-            
-
-              
           </div>
 
 
@@ -166,7 +164,7 @@ export function CustomCard ( card ) {
 export function GalleryPicture(picture, index) {
    return (
 
-      <Col className={styles.galleryCol} xs="12"  md="6" lg="4">=
+      <Col className={styles.galleryCol} xs="12"  md="6" lg="4">
         <div className={styles.galleryImageShadow}>
           <Image className={styles.galleryImage}
             alt="Sample"

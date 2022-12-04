@@ -5,7 +5,7 @@ import {Row, Col} from 'reactstrap'
 
 export default function SoftWash () {
 
-    const phone = "(205)-861-3320"
+    const phone = "(205) 861-3320"
     const email = "BlackWarriorCleaningPros@gmail.com"
     const soft_wash_description = "Soft Washing is an innovative cleaning process used on the exterior of homes or buildings, using a safe mixture of chemicals that work better than traditional pressure washing techniques. Algae and other types of buildup are mother nature's way of decomposing materials. That is why it is imperative to maintain property maintenance and cleanliness in order for it to always look nice and last. We achieve not only a clean surface, but also a deeper clean that kills bad organic buildup down in the pores of the surface. This results in longer lasting clean surfaces. "
 

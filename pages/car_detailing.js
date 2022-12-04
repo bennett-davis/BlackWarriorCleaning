@@ -2,10 +2,11 @@ import styles from '../styles/Home.module.css'
 import Head from 'next/head'
 import Image from 'next/image'
 import {Row, Col} from 'reactstrap'
+import car1 from '../public/assets/clean_car1.jpg'
 
 export default function CarDetailing () {
 
-    const phone = "(205)-861-3320"
+    const phone = "(205) 861-3320"
     const email = "BlackWarriorCleaningPros@gmail.com"
     const interior_description = "Full car detailing services include a deep clean of the interior and exterior of the vehicle. Exterior car wash only option also available. We will come to you!"
 
@@ -25,30 +26,30 @@ export default function CarDetailing () {
             </div>
             
             <Row className={styles.carHeader}>
-                <Image className={styles.galleryImage}
-                    alt="Sample"
-                    src="/assets/clean_car1.jpg"
-                    width={550}
-                    height={450}
-                    quality={100}
-                    layout="intrinsic" 
-                />
-                <Image className={styles.galleryImage}
-                    alt="Sample"
-                    src="/assets/clean_car2.jpg"
-                    width={550}
-                    height={450}
-                    quality={100}
-                    layout="intrinsic" 
-                />
-                <Image className={styles.galleryImage}
-                    alt="Sample"
-                    src="/assets/clean_car3.jpg"
-                    width={550}
-                    height={450}
-                    quality={100}
-                    layout="intrinsic" 
-                />
+                <div className={styles.galleryImageWrapper}>
+                    <Image className={styles.galleryImage}
+                        alt="Sample"
+                        src="/assets/clean_car1.jpg"
+                        quality={100}
+                        layout="fill" 
+                    />
+                </div>
+                <div className={styles.galleryImageWrapper}>
+                    <Image className={styles.galleryImage}
+                        alt="Sample"
+                        src="/assets/clean_car2.jpg"
+                        quality={100}
+                        layout="fill" 
+                    />
+                </div>
+                <div className={styles.galleryImageWrapper}>
+                    <Image className={styles.galleryImage}
+                        alt="Sample"
+                        src="/assets/clean_car3.jpg"
+                        quality={100}
+                        layout="fill" 
+                    />
+                </div>
             </Row>
             
             <div className={styles.about}>

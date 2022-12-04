@@ -13,13 +13,14 @@ import Link from 'next/link'
   Button, 
   CardImgOverlay} 
   from 'reactstrap'
+  import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 
 
 export default function Home() {
   
-  const phone = "(205)-861-3320"
+  const phone = "(205) 861-3320"
   const email = "BlackWarriorCleaningPros@gmail.com"
 
   const galleryList = [

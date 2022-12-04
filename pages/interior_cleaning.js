@@ -6,7 +6,7 @@ import { GalleryPicture } from '.'
 
 export default function InteriorCleaning () {
 
-    const phone = "(205)-861-3320"
+    const phone = "(205) 861-3320"
     const email = "BlackWarriorCleaningPros@gmail.com"
     const interior_description = "Deep clean offers an interior top to bottom clean including wiping down walls, fans, and baseboards, scrubbing the bathrooms, wiping down all countertops and kitchen appliances, dusting, sweeping/vacuuming, and mopping. A regular clean offers a less detailed interior cleaning including wiping down bathrooms, all countertops, dusting, sweeping/vacuuming and mopping. These can be scheduled on a reoccurring bases for a discounted rate. Specialty cleaning and set ups for Airbnb or rental properties are available. "
 

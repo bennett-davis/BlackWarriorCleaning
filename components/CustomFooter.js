@@ -4,7 +4,7 @@ import Link from 'next/link'
 
 function CustomFooter () {
 
-    const phone = "(205)-861-3320"
+    const phone = "(205) 861-3320"
     const email = "BlackWarriorCleaningPros@gmail.com"
 
     return (
@@ -12,7 +12,7 @@ function CustomFooter () {
 
         <div className={styles.footerInfo}>
           <Image
-            src="/assets/BWCPwhite.PNG"
+            src="/assets/BWCPwhite.png"
             alt="Black Warrior Cleaning Pros LLC"
             layout="fixed"
             width={300}

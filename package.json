@@ -1,12 +1,20 @@
-{
+{"browser": {
+  "fs": false,
+  "path": false,
+  "os": false
+},
   "name": "black_warrior_cleaning",
-  "version": "0.1.0",
-  "private": true,
+  "version": "0.1.0","engines": {
+    "node": "16.x",
+    "npm" : "8.x"
+  },
+  "private": false,
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start -p $PORT",
-    "lint": "next lint"
+    "lint": "next lint",
+    "heroku-postbuild": "npm run build"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",

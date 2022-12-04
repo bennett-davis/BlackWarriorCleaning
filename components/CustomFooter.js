@@ -1,5 +1,6 @@
 import styles from '../styles/Home.module.css'
 import Image from 'next/image'
+import Link from 'next/link'
 
 function CustomFooter () {
 
@@ -25,7 +26,7 @@ function CustomFooter () {
         
 
         <div>
-        <a href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank">
+        <Link href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank">
           <Image className={styles.footerImage}
             src="/assets/instawhite.png"
             alt="Instagram logo"
@@ -33,8 +34,8 @@ function CustomFooter () {
             height={30}
             width={30}
           />
-        </a>
-        <a href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank">
+        </Link>
+        <Link href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank">
           <Image className={styles.footerImage}
             src="/assets/ttwhite.png"
             alt="Instagram logo"
@@ -42,8 +43,8 @@ function CustomFooter () {
             height={30}
             width={30}
           />
-        </a>
-        <a href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank">
+        </Link>
+        <Link href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank">
           <Image className={styles.footerImage}
             src="/assets/fb.png"
             alt="Instagram logo"
@@ -51,7 +52,7 @@ function CustomFooter () {
             height={30}
             width={30}
           />
-        </a>
+        </Link>
         </div>
         
         

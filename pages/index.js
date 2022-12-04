@@ -126,7 +126,7 @@ export function CustomCard ( card ) {
     <Col className={styles.card} xs="12" lg="4">
       
       <h2>{card.cardName}</h2>
-      <a href={card.link}>
+      <Link href={card.link}>
 
      
       <Card >
@@ -149,7 +149,7 @@ export function CustomCard ( card ) {
         
       </Card>
 
-      </a>
+      </Link>
 
       {/* <h3>{card.description}</h3> */}
       

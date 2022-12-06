@@ -25,34 +25,34 @@ function CustomFooter () {
         </div>
         
 
-        <div>
-        <Link href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank">
-          <Image className={styles.footerImage}
-            src="/assets/instawhite.png"
-            alt="Instagram logo"
-            layout='fixed'
-            height={30}
-            width={30}
-          />
-        </Link>
-        <Link href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank">
-          <Image className={styles.footerImage}
-            src="/assets/ttwhite.png"
-            alt="Instagram logo"
-            layout='fixed'
-            height={30}
-            width={30}
-          />
-        </Link>
-        <Link href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank">
-          <Image className={styles.footerImage}
-            src="/assets/fb.png"
-            alt="Instagram logo"
-            layout='fixed'
-            height={30}
-            width={30}
-          />
-        </Link>
+        <div className={styles.footerLogos}>
+          <Link href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank">
+            <Image  
+              src="/assets/instawhite.png"
+              alt="Instagram logo"
+              layout='fixed'
+              height={30}
+              width={30}
+            />
+          </Link>
+          <Link href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank">
+            <Image  
+              src="/assets/ttwhite.png"
+              alt="Tik-Tok Logo"
+              layout='fixed'
+              height={30}
+              width={30}
+            />
+          </Link>
+          <Link href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank">
+            <Image  
+              src="/assets/fb.png"
+              alt="Facebook logo"
+              layout='fixed'
+              height={30}
+              width={30}
+            />
+          </Link>
         </div>
         
         

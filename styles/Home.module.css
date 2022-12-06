@@ -146,6 +146,14 @@
   text-align: center;
 }
 
+.footerLogos {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-end;
+  padding: 1rem;
+  width: 200px;
+}
+
 .code {
   background: #fafafa;
   border-radius: 5px;

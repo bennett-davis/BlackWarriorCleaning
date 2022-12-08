@@ -41,7 +41,7 @@ export default function Home() {
     
     {
       cardName : "Car Detailing",
-      img: "/assets/clean_car.jpg",
+      img: "/assets/clean_car1.jpg",
       description: "Car Wash and Detail",
       link: "/car_detailing"
     },

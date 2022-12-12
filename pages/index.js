@@ -53,7 +53,7 @@ export default function Home() {
     },
     { 
       cardName : "Interior Home Cleaning",
-      img: "/assets/interior_cleaning_1.jpg",
+      img: "/assets/interior_1.jpg",
       description: "Interior services",
       link: "/interior_cleaning"
 
@@ -105,7 +105,7 @@ export default function Home() {
             <div className={styles.divider4}/>
             
             <div>
-                <Row>
+              <Row>
                   {galleryList.map((picture, index) => GalleryPicture(picture, index))}
               </Row>
             </div>
@@ -124,7 +124,7 @@ export default function Home() {
 export function CustomCard ( card ) {
   return (
     
-    <Col className={styles.card} xs="12" lg="4">
+    <Col className={styles.card} xs="12" lg="4" key={card.img.toString()}>
       
       <h2>{card.cardName}</h2>
       <Link href={card.link}>
@@ -165,7 +165,7 @@ export function CustomCard ( card ) {
 export function GalleryPicture(picture, index) {
    return (
 
-      <Col className={styles.galleryCol} xs="12"  md="6" lg="4">
+      <Col className={styles.galleryCol} xs="12"  md="6" lg="4" key={picture.toString()}>
         <div className={styles.galleryImageShadow}>
           <Image className={styles.galleryImage}
             alt="Sample"

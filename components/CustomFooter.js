@@ -12,7 +12,7 @@ function CustomFooter () {
 
         <div className={styles.footerInfo}>
           <Image
-            src="/assets/BWCPwhite.png"
+            src="/assets/script_logo_white.png"
             alt="Black Warrior Cleaning Pros LLC"
             layout="fixed"
             width={300}

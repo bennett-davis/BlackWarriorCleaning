@@ -61,7 +61,7 @@ export default function Home() {
   ]
 
   return (
-    <div className={styles.container}>
+    <div  >
       <Head>
         <title>Black Warrior Cleaning Pros</title>
         <meta property="og:locale" content="en_US"/>
@@ -84,7 +84,7 @@ export default function Home() {
      
       <main className={styles.main}>
        
-           <div className={styles.headerContainer}>
+          <div className={styles.headerContainer}>
             <h1>BLACK WARRIOR CLEANING PROS</h1>
             <h4>Tuscaloosa based cleaning services, for homes and businesses.</h4>
             <h3>Contact Us</h3>

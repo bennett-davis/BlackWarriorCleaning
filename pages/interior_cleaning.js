@@ -31,7 +31,8 @@ export default function InteriorCleaning () {
                 <div className={styles.softwashHeader}>
                     <h1>Interior Home Cleaning</h1>
                     <h3>Get A Quote</h3>
-                    <h5>{phone} | {email}</h5>
+                    <h5>{phone}</h5>
+                    <h5>{email}</h5>
                 </div>
                 
     

@@ -18,10 +18,13 @@ export default function SoftWash () {
                 <link rel="icon" href="assets\circle_logo.png" />
             </Head>
 
+            <main className={styles.main}>
+
             <div className={styles.softwashHeader}>
                 <h1>Home Soft Washing</h1>
                 <h3>Get A Quote</h3>
-                <h5>{phone} | {email}</h5>
+                <h5>{phone}</h5>
+                <h5>{email}</h5>
             </div>
             
 
@@ -97,7 +100,7 @@ export default function SoftWash () {
                     <h2>{email}</h2>
                 </div>
             </div>
-
+            </main>
         </div>
         
     )

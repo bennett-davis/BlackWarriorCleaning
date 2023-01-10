@@ -1,8 +1,6 @@
-.container {
- }
 
 .indexContainer {
-  width: 100%;
+  width: 100vw;
   padding: 1rem 4rem 4rem;
    
 }
@@ -30,9 +28,12 @@
   text-align: center;
 }
 
+
+
 .main h1 {
   font-size: 3rem;
   font-weight: bold;
+  text-align: center;
 }
 
 /* Black warrior cleaning pros */
@@ -45,7 +46,7 @@
 /* phone number ; email */
 .headerContainer h2 {
   color:rgb(255, 255, 255);
-}
+ }
 
 /* contact us */
 .headerContainer h3 {
@@ -60,7 +61,7 @@
 }
 
 .divider {
-  width: 10%;
+  width: 15%;
   height: 4px;
   margin: 0rem;
   background-color: rgb(135, 23, 23);
@@ -74,7 +75,7 @@
 }
 
 .divider3 {
-  width: 90%;
+  margin: 0 3rem;
   margin-bottom: .5rem;
   height: 4px;
   background-color: rgb(136, 136, 136);
@@ -105,12 +106,10 @@
 
 .main {
   min-height: 100vh;
-  flex: 1;
-  display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 
 }
 
@@ -159,8 +158,7 @@
   border-radius: 5px;
   padding: 0.75rem;
   font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 
 .grid {
@@ -172,6 +170,7 @@
 }
 
 .headerContainerSoftwash {
+  text-align: center;
   align-items: center;
   justify-content: center;
   width: 100%;
@@ -181,6 +180,7 @@
 }
 
 .softwash h1 {
+  text-align: center;
   display: flex;
   justify-content: center;
   font-size: 4rem;
@@ -204,6 +204,15 @@
 .about{
   background-color:rgb(214, 214, 214);
   padding: 6rem 0rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.gallery {
+  width: 100vw;
+  padding: 8rem ;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -290,14 +299,7 @@
   margin-left: 0.5rem;
 }
 
-.gallery {
-  width: 90%;
-  padding: 8rem 0rem;
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
-}
+
 .gallery2 {
   width: 90%;
   padding: 0rem 0rem;
@@ -420,9 +422,7 @@
   align-items: center;
   flex-direction: row;
   justify-content: space-evenly;
-  flex-wrap: nowrap;
-  flex-shrink: unset;
-}
+ }
 
 .carServices {
   padding: 2rem 2rem;
@@ -437,3 +437,18 @@
  .carServices h2 {
   font-weight: bold;
  }
+
+ @media (max-width: 992px){
+  .headerContainer h2 {
+    font-size: 22px;
+  }
+  .divider {
+    width: 60%;
+  }
+  .gallery {
+    padding: 2rem;
+  }
+  .indexContainer {
+    padding: 1rem;
+  }
+}

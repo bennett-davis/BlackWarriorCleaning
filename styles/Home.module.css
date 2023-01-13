@@ -63,7 +63,7 @@
 .divider {
   width: 15%;
   height: 4px;
-  margin: 0rem;
+  margin: .3rem;
   background-color: rgb(135, 23, 23);
 }
 
@@ -82,7 +82,7 @@
 }
 
 .divider4 {
-  width: 100%;
+  width: 80%;
   margin-top: 0;
   margin-bottom: .25rem;
   height: 4px;
@@ -112,6 +112,8 @@
   font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 
 }
+
+ 
 
 .footer {
   justify-content: space-around;
@@ -201,13 +203,14 @@
   justify-content: center;
 }
 
-.about{
+.about, .aboutCar{
   background-color:rgb(214, 214, 214);
   padding: 6rem 0rem;
   justify-content: center;
   align-items: center;
   display: flex;
   flex-direction: column;
+  
 }
 
 .gallery {
@@ -219,16 +222,19 @@
   flex-direction: column;
 }
 
-.about h3, .gallery h3, .gallery2 h3 {
+.about h3, .aboutCar h3, .gallery h3, .gallery2 h3 {
   font-weight: bold;
   font-size: 2rem;
 }
 
-.about p {
+.about p, .aboutCar p {
   text-align: center;
-  width: 75%;
   font-size: xx-large;
+  width: 75%;
+}
 
+.aboutCar p {
+  width: 100%;
 }
 
 .cardContent {
@@ -249,14 +255,21 @@
   text-align: center;
 }
 
-.card {
+.carDetailingCard, .card {
   padding: 2rem;
   text-align: center;
   justify-content: center;
   justify-items: center;   
   color: inherit;
-  transition: transform .2s;
   background-color: transparent;
+}
+
+.carDetailingCard {
+  padding: 2rem 3rem;
+}
+
+.card {
+  transition: transform .2s;
 }
 
 .card:hover{
@@ -266,6 +279,10 @@
 
 .card:hover button {
   background-color: rgb(135, 23, 23);
+}
+
+.car_detailing .card:hover {
+  transform: none;
 }
 
 .cardDetails {
@@ -301,8 +318,7 @@
 
 
 .gallery2 {
-  width: 90%;
-  padding: 0rem 0rem;
+  padding: 0rem 1rem;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -317,20 +333,17 @@
   padding-top: 4rem;
 }
  
-
-.galleryImage {
-  background-size: cover;
-  display: block;
-  border-radius: 10px;
-  /* width: 400px; */
- }
-
- .galleryImageWrapper {
+.galleryImageWrapper {
   position: relative;
   min-height: 250px;
   max-height: 450px;
   max-width: 450px;
- }
+  border-radius: 10px;
+}
+
+.image {
+  border-radius: 10px;
+}
 
  .galleryImageShadow {
   box-shadow: 2px 5px 5px #828282;
@@ -394,8 +407,7 @@
 
 .softWashContact {
   align-items: center;
-  width: 100%;
-  justify-content: center;
+   justify-content: center;
   display: flex;
   flex-direction: column;
   padding: 6rem;
@@ -416,13 +428,15 @@
   flex-direction: column;
 }
 
-.carHeader {
-  padding: 1rem;
+.carHeaderCol {
   display: flex;
+  padding: 1rem;
+  justify-items: center;
+  justify-content: center;
   align-items: center;
-  flex-direction: row;
-  justify-content: space-evenly;
- }
+}
+
+ 
 
 .carServices {
   padding: 2rem 2rem;
@@ -442,7 +456,7 @@
   .headerContainer h2 {
     font-size: 22px;
   }
-  .divider {
+  .divider, .divider6, .divider2{
     width: 60%;
   }
   .gallery {
@@ -451,4 +465,44 @@
   .indexContainer {
     padding: 1rem;
   }
+  .about {
+    padding: 2rem 0rem;
+    line-height: 1.3;
+  }
+  .about p {
+    width: 100%;
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+  .carHeader {
+    padding: 4rem;
+    justify-content: space-evenly;
+  }
+  .carDetailingCard {
+    padding: 1rem 2rem;
+  }
+  .aboutCar, .aboutCar p {
+    padding: 2rem 1rem;
+    width: 100%;
+  }
+  .softWashContact h2 {
+    font-size: 20px;
+  }
+  .softWashServices {
+    padding: 2rem;
+   }
+  .serviceBox {
+    padding: 2rem;
+  }
+  .interiorCleanDesc {
+    width: 100vw;
+  }
+  .footer {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .footerImage {
+    margin: 3rem;
+  }
+  
 }

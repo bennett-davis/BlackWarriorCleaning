@@ -28,42 +28,49 @@ export default function CarDetailing () {
                 <h5>{email}</h5>
             </div>
             
-            <Row className={styles.carHeader} >
-            <Col  md='12' lg='4'>
-                <div className={styles.galleryImageWrapper}>
-                        <Image className={styles.galleryImage}
-                            alt="Sample"
-                            src="/assets/car_detailing_4.jpg"
-                            quality={100}
-                            layout="fill" 
-                        />
-                </div>
-            </Col>
-            <Col  md='12' lg='4'>
-                <div className={styles.galleryImageWrapper}>
-                    <Image className={styles.galleryImage}
-                        alt="Sample"
-                        src="/assets/car_detailing_5.jpg"
-                        quality={100}
-                        layout="fill" 
-                    />
-                </div>
-            </Col>
-            <Col md='12' lg='4'>
-            <div className={styles.galleryImageWrapper}>
-                    <Image className={styles.galleryImage}
-                        alt="Sample"
-                        src="/assets/car_detailing_6.jpg"
-                        quality={100}
-                        layout="fill" 
-                    />
-                </div> 
-            </Col>
-                
-                
-            </Row>
+            <div >
+                <Row >
+                    <Col  md='12' lg='4' className={styles.carDetailingCard}>
+                        <div className={styles.imageShadow}>
+                            <Image className={styles.image}
+                                alt="Sample"
+                                src="/assets/car_detailing_4.jpg"
+                                width="450px"
+                                height="450px"
+                                quality={100}
+                                layout="responsive"
+                            />
+                        </div>
+                    </Col>
+                    <Col  md='12' lg='4' className={styles.carDetailingCard} >
+                        <div className={styles.imageShadow}>
+                            <Image className={styles.image}
+                                alt="Sample"
+                                src="/assets/car_detailing_5.jpg"
+                                width="450px"
+                                height="450px"
+                                quality={100}
+                                layout="responsive"
+                            />
+                        </div>
+                    </Col>
+                    <Col md='12' lg='4' className={styles.carDetailingCard}>
+                        <div className={styles.imageShadow}>
+                            <Image className={styles.image}
+                                alt="Sample"
+                                src="/assets/car_detailing_6.jpg"
+                                width="450px"
+                                height="450px"
+                                quality={100}
+                                layout="responsive"
+                            />
+                        </div> 
+                    </Col>
+                </Row>
+            </div>
             
-            <div className={styles.about}>
+            
+            <div className={styles.aboutCar}>
                 <h3>Car Services</h3>
                 <div className={styles.divider5}/>
                 <p>{interior_description}</p>
@@ -91,11 +98,11 @@ export default function CarDetailing () {
                 
             </div> */}
             <div className={styles.softWashContact}>
-                    <h2>Contact Us</h2>
-                    <div className={styles.divider6}/>
-                    <h2>{phone}</h2>
-                    <h2>{email}</h2>
-                </div>
+                <h2>Contact Us</h2>
+                <div className={styles.divider6}/>
+                <h2>{phone}</h2>
+                <h2>{email}</h2>
+            </div>
 
             </main>
         </div>

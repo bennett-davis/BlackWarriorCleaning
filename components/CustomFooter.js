@@ -14,7 +14,7 @@ function CustomFooter () {
           <Image
             src="/assets/script_logo_white.png"
             alt="Black Warrior Cleaning Pros LLC"
-            layout="fixed"
+            layout="responsive"
             width={300}
             height={75}
           />
@@ -27,7 +27,7 @@ function CustomFooter () {
 
         <div className={styles.footerLogos}>
           <Link href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank">
-            <Image  
+            <Image className={styles.footerImage}
               src="/assets/instawhite.png"
               alt="Instagram logo"
               layout='fixed'
@@ -36,7 +36,7 @@ function CustomFooter () {
             />
           </Link>
           <Link href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank">
-            <Image  
+            <Image className={styles.footerImage}
               src="/assets/ttwhite.png"
               alt="Tik-Tok Logo"
               layout='fixed'
@@ -45,7 +45,7 @@ function CustomFooter () {
             />
           </Link>
           <Link href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank">
-            <Image  
+            <Image className={styles.footerImage}
               src="/assets/fb.png"
               alt="Facebook logo"
               layout='fixed'

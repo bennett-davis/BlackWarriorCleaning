@@ -34,15 +34,7 @@ export default function InteriorCleaning () {
                     <h5>{phone}</h5>
                     <h5>{email}</h5>
                 </div>
-                
-    
-                
-                {/* <div className={styles.about}>
-                    <h3>Interior Services</h3>
-                    <div className={styles.divider5}/>
-                    <p>{interior_description}</p>
-                </div> */}
-                
+                   
 
                 <div className={styles.softWashServices}>
                     <h2>Service Types</h2>
@@ -57,7 +49,7 @@ export default function InteriorCleaning () {
                         </Col>
                     </Row>
 
-                    <p>These can be scheduled on a reoccurring bases for a discounted rate. Specialty cleaning and set ups for Airbnb or rental properties are available.</p>
+                    <p className={styles.interiorCleanDesc}>These can be scheduled on a reoccurring bases for a discounted rate. Specialty cleaning and set ups for Airbnb or rental properties are available.</p>
 
                     
                 </div>

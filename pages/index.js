@@ -179,15 +179,20 @@ export function GalleryPicture(picture, index) {
    return (
 
       <Col className={styles.galleryCol} xs="12"  md="6" lg="4" key={picture.toString()}>
+        
+        
+
         <div className={styles.galleryImageShadow}>
           <Image className={styles.galleryImage}
             alt="Sample"
             src={picture}
-            width={450}
-            height={450}
+            objectFit={'contain'}
             quality={100}
+            width="450px"
+            height="450px"
             layout="intrinsic" 
-          />
+           
+           />
         </div>
         
       </Col>

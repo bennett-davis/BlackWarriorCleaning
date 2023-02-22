@@ -19,7 +19,7 @@ function CustomFooter () {
             height={75}
           />
           {/* <h4 >Black Warrior Cleaning Pros LLC</h4> */}
-          <div className={styles.divider4}/>
+          <div className={styles.divider4footer}/>
           <p>{email}</p>
           <p>{phone}</p>
         </div>

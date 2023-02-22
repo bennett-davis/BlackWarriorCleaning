@@ -41,10 +41,12 @@ export default function InteriorCleaning () {
                      <Row className={styles.swRow}>
                         <Col className={styles.serviceBox} xs="12" lg="5">
                             <h4>Deep Clean</h4>
+                            <div className={styles.divider5}/>
                             <p>Deep clean offers an interior top to bottom clean including wiping down walls, fans, and baseboards, scrubbing the bathrooms, wiping down all countertops and kitchen appliances, dusting, sweeping/vacuuming, and mopping.</p>
                         </Col>
                         <Col className={styles.serviceBox} xs="12" lg="5">
                             <h4>Regular Clean</h4>
+                            <div className={styles.divider5}/>
                             <p>A regular clean offers a less detailed interior cleaning including wiping down bathrooms, all countertops, dusting, sweeping/vacuuming and mopping. </p>
                         </Col>
                     </Row>

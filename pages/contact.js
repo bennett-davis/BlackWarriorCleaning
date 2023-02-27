@@ -43,28 +43,36 @@ export default function Contact () {
 
                     <div className={styles.iconRow}>
                         <div className={styles.logoWrapper}>
-                            <Image className={styles.contactLogo}
-                                alt="facebook logo"
-                                src="/assets/fb.png"
-                                quality={100}
-                                layout="fill"
-                            />
+                            <a href="https://www.facebook.com/profile.php?id=100087630938358" target="_blank"  rel="noopener noreferrer"> 
+                                <Image className={styles.contactLogo}
+                                    alt="facebook logo"
+                                    src="/assets/fb.png"
+                                    quality={100}
+                                    layout="fill"
+                                />
+                            </a>
                         </div>
+                
                         <div className={styles.logoWrapper}>
-                            <Image className={styles.contactLogo}
-                                alt="Instagram Logo"
-                                src="/assets/instawhite.png"
-                                quality={100}
-                                layout="fill"
-                            />
+                            <a href="https://instagram.com/blackwarriorcleaningpros?igshid=YWJhMjlhZTc=" target="_blank" rel="noopener noreferrer">
+                                <Image className={styles.contactLogo}
+                                    alt="Instagram Logo"
+                                    src="/assets/instawhite.png"
+                                    quality={100}
+                                    layout="fill"
+                                />
+                            </a>
                         </div>
+                       
                         <div className={styles.logoWrapper}>
-                            <Image className={styles.contactLogo}
-                                alt="TikTok Logo"
-                                src="/assets/ttwhite.png"
-                                quality={100}
-                                layout="fill"
-                            />
+                            <a href="https://www.tiktok.com/@blackwarriorcleaningpros" target="_blank"  rel="noopener noreferrer">
+                                <Image className={styles.contactLogo}
+                                        alt="TikTok Logo"
+                                        src="/assets/ttwhite.png"
+                                        quality={100}
+                                        layout="fill"
+                                    />
+                            </a>
                         </div>
                     </div>
                     

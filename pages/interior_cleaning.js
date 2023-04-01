@@ -1,4 +1,4 @@
-import styles from '../styles/Home.module.css'
+import styles from '../styles/interior_cleaning.module.scss'
 import Head from 'next/head'
 import Image from 'next/image'
 import {Row, Col} from 'reactstrap'

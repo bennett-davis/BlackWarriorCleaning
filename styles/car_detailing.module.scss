@@ -1,0 +1,150 @@
+
+.softwash h1 {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-size: 4rem;
+    font-weight: bold;
+    padding: 2rem;
+    color: white;
+    background-color: rgb(135, 23, 23);
+  }
+
+  .softwash h4 {
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .softwash h3 {
+     display: flex;
+    justify-content: center;
+  }
+
+  .softwash p {
+    padding: 0 4rem;
+    text-align: center;
+  }
+
+  .main {
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  }
+  
+  .main h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-align: center;
+  }
+
+  .softwashHeader {
+    width: 100%;
+    background-color: rgb(135, 23, 23);
+    padding: 2rem;
+    color: white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .carDetailingCard, .card {
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+    justify-items: center;   
+    color: inherit;
+    background-color: transparent;
+  }
+  
+  .carDetailingCard {
+    padding: 2rem 3rem;
+  }
+
+  .imageShadow {
+    border-radius: 15px;
+    box-shadow: 2px 5px 10px #161616;
+  }
+
+  .image {
+    border-radius: 10px;
+  }
+
+  .about, .aboutCar{
+    background-color:rgb(214, 214, 214);
+    padding: 6rem 0rem;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .about h3, .aboutCar h3, .gallery h3, .gallery2 h3 {
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  
+  .about p, .aboutCar p {
+    text-align: center;
+    font-size: xx-large;
+    width: 75%;
+  }
+  
+  .aboutCar p {
+    width: 100%;
+  }
+  
+  .divider5 {
+    width: 50%;
+    height: 4px;
+    margin: .5rem;
+    background-color: rgb(135, 23, 23);
+  }
+  
+  .divider6 {
+    width: 30%;
+    height: 4px;
+    margin: 0rem;
+    background-color: rgb(135, 23, 23);
+  }
+
+  .softWashContact {
+    align-items: center;
+     justify-content: center;
+    display: flex;
+    flex-direction: column;
+    padding: 6rem;
+    margin-bottom: 0rem;
+  }
+
+  .softWashContact h2 {
+    font-weight: bold;
+    padding: .2rem;
+  }
+
+@media  (max-width: 992px) {
+    .carDetailingCard {
+        padding: 1rem 2rem;
+    }
+    .aboutCar, .aboutCar p {
+        padding: 2rem 1rem;
+        width: 100%;
+    }
+    .softWashContact h2 {
+        font-size: 20px;
+      }
+}
+
+  /*
+ 
+  
+ 
+ 
+ 
+divider5
+softWashContact
+divider6
+
+*/

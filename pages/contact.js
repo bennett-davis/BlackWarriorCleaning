@@ -2,7 +2,7 @@ import { Button } from "reactstrap";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Link from "next/link";
 import Head from "next/head";
-import styles from '../styles/Home.module.css'
+import styles from '../styles/contact.module.scss'
 import Image from "next/image";
 
 

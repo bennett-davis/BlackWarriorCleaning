@@ -39,25 +39,26 @@ export default function Home() {
 
   const cardList = [
     
-    {
-      cardName : "Car Detailing",
-      img: "/assets/car_detailing_4.jpg",
-      description: "Car Wash and Detail",
-      link: "/car_detailing"
+    { 
+      cardName : "Interior Home Cleaning",
+      img: "/assets/interior_1.jpg",
+      description: "Interior services",
+      link: "/interior_cleaning"
     },
+    
     {
       cardName : "Home Soft Washing",
       img: "/assets/home_softwash_1.jpg",
       description: "Our Home Wash Services Include: Roof, Siding, Gutter, Flatwork, Fence, and Porch",
       link: "/soft_wash"
     },
-    { 
-      cardName : "Interior Home Cleaning",
-      img: "/assets/interior_1.jpg",
-      description: "Interior services",
-      link: "/interior_cleaning"
-
-    }
+    {
+      cardName : "Car Detailing",
+      img: "/assets/car_detailing_4.jpg",
+      description: "Car Wash and Detail",
+      link: "/car_detailing"
+    },
+    
   ]
 
   return (

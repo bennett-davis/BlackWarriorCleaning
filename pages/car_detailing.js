@@ -43,14 +43,12 @@ export default function CarDetailing () {
                         </div>
                     </Col>
                     <Col  md='12' lg='4' className={styles.carDetailingCard} >
-                        <div className={styles.imageShadow}>
+                        <div className={styles.imageContainer}>
                             <Image className={styles.image}
                                 alt="Sample"
                                 src="/assets/car_detailing_5.jpg"
-                                width="450px"
-                                height="450px"
                                 quality={100}
-                                layout="responsive"
+                                layout="fill"
                             />
                         </div>
                     </Col>

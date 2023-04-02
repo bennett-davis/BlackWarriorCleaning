@@ -1,0 +1,59 @@
+@use 'colors';
+
+.divider4footer {
+    width: 100%;
+    margin: .5rem 0;
+    justify-content: center;
+    height: 4px;
+    background-color: colors.$primary-color;
+}
+
+.footer {
+    justify-content: space-around;
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    font-size: large;
+    background-color: rgb(51, 51, 51);
+    color: white;
+}
+
+.footer a {
+    justify-content: flex-end;
+    flex-direction: row;
+    align-items: center;
+    padding: 0rem 1rem;
+}
+
+.footer h4 {
+    font-weight: bold;
+}
+  
+.footer p {
+    color:rgb(225, 225, 225);
+    margin: 0;
+}
+
+.footerInfo{
+    padding: 1rem 0rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+.footerLogos {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding: 1rem;
+    width: 200px;
+}
+
+@media (max-width: 992px){
+    .footer {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .footerImage {
+        margin: 3rem;
+    }
+}

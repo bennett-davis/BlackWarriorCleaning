@@ -1,230 +1,228 @@
-
+@use 'colors';
 
 .main {
-    min-height: 100vh;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri', 'Trebuchet MS', sans-serif;
 }
   
 .main h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    text-align: center;
+  font-size: 3rem;
+  font-weight: bold;
+  text-align: center;
 }
 
 .headerContainer {
-    align-items: center;
-    background-color: rgb(135, 23, 23);
-    width: 100%;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-    padding: 6rem;
-    margin-bottom: 6rem;
-    text-align: center;
+  align-items: center;
+  background-color: colors.$primary-color;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  padding: 6rem;
+  margin-bottom: 6rem;
+  text-align: center;
 }
 
 .headerContainer h1 {
-    color: white;
-    font-weight: bolder;
-    font-size: 4rem;
-  }
-  
-  /* phone number ; email */
-  .headerContainer h2 {
-    color:rgb(255, 255, 255);
-   }
-  
-  /* contact us */
-  .headerContainer h3 {
-    color:rgb(255, 255, 255);
-    font-weight: bold;
-  }
-  
-  /* main subtitle */
-  .headerContainer h4 {
-    padding-bottom: 4rem;
-    color:rgb(197, 197, 197);
-  }
+  color: white;
+  font-weight: bolder;
+  font-size: 4rem;
+}
 
-  .divider2 {
-    width: 15%;
-    margin-bottom: .5rem;
-    height: 3px;
-    background-color: rgb(145, 145, 145);
-  }
-  
-  .divider3 {
-    margin: 0 3rem;
-    margin-bottom: .5rem;
-    height: 4px;
-    background-color: rgb(136, 136, 136);
-  }
+/* phone number ; email */
+.headerContainer h2 {
+  color:rgb(255, 255, 255);
+}
 
-  .indexContainer {
-    width: 100vw;
-    padding: 1rem 4rem 4rem;
-     
-  }
-  
-  .about {
-    background-color:rgb(214, 214, 214);
-    padding: 6rem 0rem;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
+/* contact us */
+.headerContainer h3 {
+  color:rgb(255, 255, 255);
+  font-weight: bold;
+}
 
-  .about h3, .aboutCar h3, .gallery h3, .gallery2 h3 {
-    font-weight: bold;
-    font-size: 2rem;
-  }
+/* main subtitle */
+.headerContainer h4 {
+  padding-bottom: 4rem;
+  color:rgb(197, 197, 197);
+}
 
-  .about p, .aboutCar p {
-    text-align: center;
-    font-size: xx-large;
-    width: 75%;
-  }
+.divider2 {
+  width: 15%;
+  margin-bottom: .5rem;
+  height: 3px;
+  background-color: rgb(145, 145, 145);
+}
 
-  .divider {
-    width: 15%;
-    height: 4px;
-    margin: .3rem;
-    background-color: rgb(135, 23, 23);
-  }
+.divider3 {
+  margin: 0 3rem;
+  margin-bottom: .5rem;
+  height: 4px;
+  background-color: rgb(136, 136, 136);
+}
 
-  .gallery {
-    width: 100vw;
-    padding: 8rem ;
-    justify-content: center;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-  }
+.indexContainer {
+  width: 100vw;
+  padding: 1rem 4rem 4rem;
+}
 
-  .gallery h3 {
-    font-weight: bold;
-    font-size: 2rem;
-  }
+.about {
+  background-color:rgb(214, 214, 214);
+  padding: 6rem 0rem;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 
-  .divider4 {
-    width: 80%;
-    margin: .5rem 0;
-    justify-content: center;
-    height: 4px;
-    background-color: rgb(135, 23, 23);
-  }
+.about h3, .aboutCar h3, .gallery h3, .gallery2 h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
-  .imageShadow {
-    border-radius: 15px;
-    box-shadow: 2px 5px 10px #161616;
-  }
+.about p, .aboutCar p {
+  text-align: center;
+  font-size: xx-large;
+  width: 75%;
+}
 
-  .card {
-    padding: 2rem;
-    text-align: center;
-    justify-content: center;
-    justify-items: center;   
-    color: inherit;
-    background-color: transparent;
-  }
+.divider {
+  width: 15%;
+  height: 4px;
+  margin: .3rem;
+  background-color: colors.$primary-color;
+}
 
-  .card {
-    transition: transform .2s;
-  }
+.gallery {
+  width: 100vw;
+  padding: 8rem ;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
 
-  .card:hover{
-    transform: scale(1.05);
-    cursor: pointer;
-  }
-  
-  .card:hover button {
-    background-color: rgb(135, 23, 23);
-  }
+.gallery h3 {
+  font-weight: bold;
+  font-size: 2rem;
+}
 
+.divider4 {
+  width: 80%;
+  margin: .5rem 0;
+  justify-content: center;
+  height: 4px;
+  background-color: colors.$primary-color;
+}
+
+.imageShadow {
+  border-radius: 15px;
+  box-shadow: 2px 5px 10px #161616;
+}
+
+.card {
+  padding: 2rem;
+  text-align: center;
+  justify-content: center;
+  justify-items: center;   
+  color: inherit;
+  background-color: transparent;
+}
+
+.card {
+  transition: transform .2s;
+}
+
+.card:hover{
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.card:hover button {
+  background-color: colors.$primary-color;
+}
+
+.card h2 {
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+}
+
+.card h3 {
+  padding-top: 1rem;
+}
+
+.image {
+  border-radius: 10px;
+}
+
+.cardContent {
+  align-items: flex-end;
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  background-color: grey;
+  border: none;
+  padding: .5rem 4rem;
+  font-weight: bold;
+}
+
+.card:hover button {
+  background-color: colors.$primary-color;
+}
+
+.galleryCol{
+  justify-content: center;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  padding-top: 4rem;
+}
+
+.galleryImageShadow {
+  box-shadow: 2px 5px 5px #828282;
+  display: flex;
+  z-index: 1;
+  overflow: hidden;
+  border-radius: 10px;
+}
+
+.galleryImage {
+  position: relative;
+}
+
+@media (max-width: 1400px){
   .card h2 {
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-   }
-  
-  .card h3 {
-    padding-top: 1rem;
+    font-size: 2.1vw;
   }
-
-  .image {
-    border-radius: 10px;
-  }
-
-  .cardContent {
-    align-items: flex-end;
-    display: flex;
-    justify-content: center;
-  }
-
-  .button {
-    background-color: grey;
-    border: none;
-    padding: .5rem 4rem;
-    font-weight: bold;
-  }
-
-  .card:hover button {
-    background-color: rgb(135, 23, 23);
-  }
-
-  .galleryCol{
-    justify-content: center;
-    flex-direction: column;
-    display: flex;
-    align-items: center;
-    padding-top: 4rem;
-  }
-
-  .galleryImageShadow {
-    box-shadow: 2px 5px 5px #828282;
-    display: flex;
-    z-index: 1;
-    overflow: hidden;
-    border-radius: 10px;
-     
-    }
-
-    .galleryImage {
-        position: relative;
-      }
-
-  @media (max-width: 1400px){
-    .card h2 {
-      font-size: 2.1vw;
-    }
-   }
+}
 
 @media (max-width: 992px){
-    .indexContainer {
-        padding: 1rem;
-      }
-      .about {
-        padding: 2rem 0rem;
-        line-height: 1.3;
-      }
-      .about p {
-        width: 100%;
-        font-size: 25px;
-        padding: 1rem 2rem;
-      }
-      .divider, .divider6, .divider2{
-        width: 60%;
-      }
-      .gallery {
-        padding: 2rem;
-      }
-      .divider4 {
-        width: 90vw;
-      }
-      .card h2 {
-        font-size: 28px;
-      }
+  .indexContainer {
+      padding: 1rem;
+  }
+  .about {
+    padding: 2rem 0rem;
+    line-height: 1.3;
+  }
+  .about p {
+    width: 100%;
+    font-size: 25px;
+    padding: 1rem 2rem;
+  }
+  .divider, .divider6, .divider2{
+    width: 60%;
+  }
+  .gallery {
+    padding: 2rem;
+  }
+  .divider4 {
+    width: 90vw;
+  }
+  .card h2 {
+    font-size: 28px;
+  }
 }

@@ -39,7 +39,9 @@ function CustomNavbar(args) {
               <NavLink href="/interior_cleaning">Interior Cleaning</NavLink>
             </NavItem>
           </Nav>
+          
         </Collapse>
+        <NavbarText>(205) 861-3320</NavbarText>
       </Navbar>
     </div>
   );

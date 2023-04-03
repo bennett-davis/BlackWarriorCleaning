@@ -94,15 +94,18 @@ export default function Home() {
             <h2>{email}</h2>
           </div>
 
-          <h1>Services</h1>
-          <div className={styles.divider3}/>
+          <div className={styles.services}>
+            <h1>Services</h1>
+            <div className={styles.divider3}/>
 
-          
-          <div className={styles.indexContainer}>
-            <Row>
-              {cardList.map((card, index) => CustomCard(card, index))}
-            </Row>
+            
+            <div className={styles.indexContainer}>
+              <Row>
+                {cardList.map((card, index) => CustomCard(card, index))}
+              </Row>
+            </div>
           </div>
+          
            
           <div className={styles.about}>
             <h3>About Us</h3>

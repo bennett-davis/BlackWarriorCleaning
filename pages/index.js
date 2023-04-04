@@ -38,23 +38,28 @@ export default function Home() {
   ]
 
   const cardList = [
-    
+    {
+      cardName : "Home Soft Wash / Pressure Wash",
+      img: "/assets/house_clean_brick.jpg",
+      description: "Our Home Wash Services Include: Roof, Siding, Gutter, Flatwork, Fence, and Porch",
+      link: "/soft_wash"
+    },
     { 
       cardName : "Interior Home Cleaning",
-      img: "/assets/interior_1.jpg",
+      img: "/assets/interior_home_homepage.jpg",
       description: "Interior services",
       link: "/interior_cleaning"
     },
     
     {
-      cardName : "Home Soft Washing",
-      img: "/assets/home_softwash_1.jpg",
-      description: "Our Home Wash Services Include: Roof, Siding, Gutter, Flatwork, Fence, and Porch",
-      link: "/soft_wash"
-    },
-    {
       cardName : "Car Detailing",
       img: "/assets/car_detailing_4.jpg",
+      description: "Car Wash and Detail",
+      link: "/car_detailing"
+    },
+    {
+      cardName : "Other Services",
+      img: "/assets/stair_remodel.jpg",
       description: "Car Wash and Detail",
       link: "/car_detailing"
     },
@@ -85,26 +90,32 @@ export default function Home() {
      
       <main className={styles.main}>
        
-          <div className={styles.headerContainer}>
-            <h1>BLACK WARRIOR CLEANING PROS</h1>
-            <h4>Tuscaloosa based cleaning services, for homes and businesses.</h4>
-            <h3>Contact Us</h3>
-            <div className={styles.divider2}/>
-            <h2>{phone}</h2>
-            <h2>{email}</h2>
-          </div>
-
-          <div className={styles.services}>
-            <h1>Services</h1>
-            <div className={styles.divider3}/>
+           
+            <div className={styles.backgroundGradient}>
 
             
-            <div className={styles.indexContainer}>
-              <Row>
-                {cardList.map((card, index) => CustomCard(card, index))}
-              </Row>
+              <div className={styles.headerContainer}>
+                <h1>BLACK WARRIOR CLEANING PROS</h1>
+                <h4>Tuscaloosa based cleaning services, for homes and businesses.</h4>
+                <h3>Contact Us</h3>
+                <div className={styles.divider2}/>
+                <h2>{phone}</h2>
+                <h2>{email}</h2>
+              </div>
+
+              <div className={styles.services}>
+                {/* <h1>Services</h1>
+                <div className={styles.divider3}/>
+
+                */}
+                <div className={styles.indexContainer}>
+                  <Row>
+                    {cardList.map((card, index) => CustomCard(card, index))}
+                  </Row>
+                </div>
+              </div>
             </div>
-          </div>
+           
           
            
           <div className={styles.about}>
@@ -141,12 +152,12 @@ export default function Home() {
 export function CustomCard ( card ) {
   return (
     
-    <Col className={styles.card} xs="12" lg="4" key={card.img.toString()}>
+    <Col className={styles.card} xs="12" lg="6" key={card.img.toString()}>
       
-      <h2>{card.cardName}</h2>
+      {/* <h2>{card.cardName}</h2>
       <Link href={card.link}>
 
-     
+      */}
       <Card >
         
         <div className={styles.imageShadow}>
@@ -154,20 +165,25 @@ export function CustomCard ( card ) {
           <Image className={styles.image}
             alt="Sample"
             src={card.img}
-            width="450px"
-            height="450px"
+            
             quality={100}
-            layout="responsive" 
+            layout="fill" 
             
           />
           <CardImgOverlay className={styles.cardContent}>
-            <Button className={styles.button}>Learn More</Button>
+            
+            <h3>{card.cardName}</h3>
+            <div className={styles.cardLinks}>
+              <Link href={card.link} ><h4 className={styles.button}>Learn More &gt;</h4></Link>
+              <Link href={card.link} ><h4 className={styles.button}>Get A Quote &gt;</h4></Link>
+            </div>
+            
           </CardImgOverlay>
         </div>
         
       </Card>
 
-      </Link>
+      {/* </Link> */}
 
       {/* <h3>{card.description}</h3> */}
       

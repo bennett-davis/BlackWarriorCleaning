@@ -1,11 +1,10 @@
 @use 'colors';
 
 .main {
-  display: flex;
+  
+  
   min-height: 100vh;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
   font-family:  'Trebuchet MS', sans-serif;
 }
   
@@ -13,17 +12,24 @@
   font-size: 3rem;
   font-weight: bold;
   text-align: center;
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Calibri',;
 }
+
+.backgroundGradient {
+  background-image: linear-gradient(to bottom, colors.$primary-color, rgb(20, 20, 20), ), linear-gradient(to bottom, rgb(195, 195, 195), rgb(195, 195, 195));
+  background-size: 100vw 840px, 100vw;
+  background-repeat: no-repeat, no-repeat;
+  background-position: top, bottom;
+ }
 
 .headerContainer {
   align-items: center;
-  background-image: linear-gradient(to right, #200122, colors.$primary-color, );
   width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: column;
   padding: 6rem;
-   
+
   text-align: center;
 }
 
@@ -51,23 +57,23 @@
 }
 
 .services {
-  padding: 4rem;
-  background-color: rgb(222, 222, 222);
+  justify-content: center;
+  background-color: transparent;
+  color: white;
   flex-direction: column;
-  width: 100vw;
-  height: 100%;
-  display: flex;
-  align-items: center;
+   
+ 
 }
 
 .divider3 {
-   
+  
   width: 80vw;
   height: 4px;
   background-color: rgb(136, 136, 136);
 }
 
 .indexContainer {
+  padding: 3rem;
   display: inline;
   margin-right: auto;
   margin-left: auto;
@@ -79,11 +85,11 @@
   width: 15%;
   margin-bottom: .5rem;
   height: 3px;
-  background-color: rgb(145, 145, 145);
+  background-color: rgb(214, 214, 214);
 }
 
 .about {
-  background-color:rgb(255, 255, 255);
+  background-color:rgb(195, 195, 195);
   padding: 6rem 0rem;
   justify-content: center;
   align-items: center;
@@ -110,7 +116,7 @@
 }
 
 .gallery {
-  background-color: rgb(222, 222, 222);
+  background-color: rgb(255, 255, 255);
   width: 100vw;
   padding: 8rem ;
   justify-content: center;
@@ -133,12 +139,15 @@
 }
 
 .imageShadow {
-  border-radius: 15px;
-  box-shadow: 2px 5px 10px #161616;
+  border-radius: 0px;
+  position: relative;
+  height: 500px;
+  
 }
 
 .card {
   padding: 2rem;
+  justify-content: space-evenly;
   text-align: center;
   justify-content: center;
   justify-items: center;   
@@ -151,16 +160,13 @@
 }
 
 .card:hover{
-  transform: scale(1.05);
-  cursor: pointer;
+   cursor: pointer;
 }
 
-.card:hover button {
-  background-color: colors.$primary-color;
-}
+
 
 .card h2 {
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
   font-weight: bold;
 }
 
@@ -169,25 +175,37 @@
 }
 
 .image {
-  border-radius: 10px;
+  border-radius: 0px;
+  object-fit: cover;
 }
 
 .cardContent {
-  align-items: flex-end;
+  flex-direction: column;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
+
 
 .button {
-  background-color: grey;
+  background-color: transparent;
   border: none;
-  padding: .5rem 4rem;
   font-weight: bold;
+  padding: 0 1rem;
+  color: rgb(0, 47, 255);
+  text-decoration: none;
 }
 
-.card:hover button {
-  background-color: colors.$primary-color;
+.button:hover {
+  text-decoration: underline;
 }
+
+.cardLinks {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+
 
 .galleryCol{
   justify-content: center;

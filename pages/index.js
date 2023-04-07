@@ -61,7 +61,7 @@ export default function Home() {
       cardName : "Other Services",
       img: "/assets/stair_remodel.jpg",
       description: "Car Wash and Detail",
-      link: "/car_detailing"
+      link: "/other_services"
     },
     
   ]
@@ -174,8 +174,8 @@ export function CustomCard ( card ) {
             
             <h3>{card.cardName}</h3>
             <div className={styles.cardLinks}>
-              <Link href={card.link} ><h4 className={styles.button}>Learn More &gt;</h4></Link>
-              <Link href={card.link} ><h4 className={styles.button}>Get A Quote &gt;</h4></Link>
+              <Link href={card.link} ><h5 className={styles.button}>Learn More &gt;</h5></Link>
+              <Link href={card.link} ><h5 className={styles.button}>Get A Quote &gt;</h5></Link>
             </div>
             
           </CardImgOverlay>

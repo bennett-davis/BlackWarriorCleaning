@@ -146,7 +146,7 @@
 }
 
 .card {
-  padding: 2rem;
+  border: none;
   justify-content: space-evenly;
   text-align: center;
   justify-content: center;
@@ -160,9 +160,16 @@
 }
 
 .card:hover{
-   cursor: pointer;
+  cursor: pointer;
 }
 
+.card:nth-child(odd) {
+  padding: 2rem 1rem 0rem 2rem;
+}
+
+.card:nth-child(even) {
+  padding: 2rem 2rem 0rem 1rem;
+}
 
 
 .card h2 {
@@ -191,7 +198,7 @@
   border: none;
   font-weight: bold;
   padding: 0 1rem;
-  color: rgb(0, 47, 255);
+  color: blue;
   text-decoration: none;
 }
 
@@ -246,6 +253,9 @@
     font-size: 25px;
     padding: 1rem 2rem;
   }
+  .headerContainer h2 {
+    font-size: 21px;
+  }
   .divider, .divider6, .divider2{
     width: 60%;
   }
@@ -255,7 +265,20 @@
   .divider4 {
     width: 90vw;
   }
+  .card:first-child{
+    margin: 2rem 0 0 0;
+  }
+  .card:nth-child(odd) {
+    padding: 1rem 2rem;
+  }
+  .card:nth-child(even) {
+    padding: 1rem 2rem;
+  }
   .card h2 {
     font-size: 28px;
+  }
+  .cardLinks h5 {
+    padding: .5rem 1rem;
+    font-size: 18px;
   }
 }

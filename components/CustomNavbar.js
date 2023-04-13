@@ -38,6 +38,9 @@ function CustomNavbar(args) {
             <NavItem>
               <NavLink href="/interior_cleaning">Interior Cleaning</NavLink>
             </NavItem>
+            <NavItem>
+              <NavLink href="/other_services">Other Services</NavLink>
+            </NavItem>
           </Nav>
           
         </Collapse>

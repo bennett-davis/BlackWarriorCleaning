@@ -27,9 +27,6 @@ function CustomNavbar(args) {
         <Collapse isOpen={isOpen} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink href="/">Home</NavLink>
-            </NavItem>
-            <NavItem>
               <NavLink href="/car_detailing">Car Detailing</NavLink>
             </NavItem>
             <NavItem>

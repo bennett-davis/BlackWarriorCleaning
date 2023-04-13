@@ -40,7 +40,7 @@ export default function Home() {
   const cardList = [
     {
       cardName : "Home Soft Wash / Pressure Wash",
-      img: "/assets/house_clean_brick.JPG",
+      img: "/assets/homepage_woftwash_brick.jpg",
       description: "Our Home Wash Services Include: Roof, Siding, Gutter, Flatwork, Fence, and Porch",
       link: "/soft_wash"
     },
@@ -59,7 +59,7 @@ export default function Home() {
     },
     {
       cardName : "Other Services",
-      img: "/assets/stair_remodel.jpg",
+      img: "/assets/stair_remodel_3.jpg",
       description: "Car Wash and Detail",
       link: "/other_services"
     },

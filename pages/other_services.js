@@ -15,7 +15,7 @@ export default function OtherServices () {
     return (
         <div className={styles.main}>
             <div className={styles.info}>
-            <h1>BLACK WARRIOR CLEANING PROS</h1>
+                <h1>BLACK WARRIOR CLEANING PROS</h1>
                 <h2>Other Projects</h2>
                 <h3>{infoText}</h3>
             </div>
@@ -61,4 +61,5 @@ export default function OtherServices () {
         
     )
 }
+
 

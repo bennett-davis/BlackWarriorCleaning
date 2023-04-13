@@ -1,13 +1,15 @@
 @use 'colors';
 
 $translate-distane-x: 5px;
-$translate-distane-y: 400px;
+$translate-distane-y: 110%;
+
+$width: 20%;
 
 
 .main {
     display: flex;
     flex-direction: column;
-    height: 100vh;
+     
     font-family:  'Trebuchet MS', sans-serif;
   }
 
@@ -31,18 +33,18 @@ $translate-distane-y: 400px;
   }
   
   .container {
-    position: relative;
-    width: 100vw;
-    height: 450px;
-    overflow: hidden;
+    min-height: 500px;
+    display: flex;
+    flex-direction: row;
+    width: 100vw;  
     background-color: colors.$grey-background;
     z-index: 0;
-    padding-left: 4rem;
+     overflow: hidden;
+    align-items: center;
   }
 
   .serviceInfo {
     padding: 2rem 4rem;
-    margin: 0 0 0 25%;
     text-align: center;
     z-index: -5;
   }
@@ -57,32 +59,27 @@ $translate-distane-y: 400px;
     font-size: x-large;
    }
   
-  .imageContainer {
-    display: flex;
-    justify-content: space-around;
-    margin: 5rem;
-     
-    padding-bottom: 5rem;
+.imageContainer {
     position: relative;
-    transition: transform 0.5s ease-in-out;
-    width: auto;
-    height: 100%;
-    object-fit: cover;
-    
-  }
+    margin: 0 6rem;
+}
   
   .image {
+     
     border-radius: 20px;
+    width: 400px;
+    height: 400px;
    }
 
   .imageStyle {
     border-radius: 10px;
     border: 1px solid black !important;
     border-width: 1px;
+    
   }
 
   .image:first-child {
-    position: absolute;
+    
     top: 0;
     left: 0;
   }

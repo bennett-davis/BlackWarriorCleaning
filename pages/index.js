@@ -165,7 +165,6 @@ export function CustomCard ( card ) {
           <Image className={styles.image}
             alt="Sample"
             src={card.img}
-            
             quality={100}
             layout="fill" 
             

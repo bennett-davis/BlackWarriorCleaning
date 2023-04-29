@@ -74,7 +74,7 @@ export default function Home() {
         <meta property="og:type" content="website"/>
         <meta property="og:title" content="Black Warrior Cleaning Pros LLC"/>
         <meta property="og:description" content="We are a Tuscaloosa based, all around washing and cleaning services company. Services include: exterior home soft wash and pressure washing, interior cleaning, and car detailng. The services we offer help provide an overall cleanliness while ensuring convenience to you and your family." key="desc"/>
-        <meta property="og:url" content="http://blackwarriorcleaningpros.com/"/>
+        <meta property="og:url" content="https://BlackWarriorCleaningPros.com/"/>
         <meta property="og:image" content= "/assets/circle_logo_opengraph.png"/>
         <meta property="og:site_name" content="Black Warrior Cleaning Pros LLC" />
 

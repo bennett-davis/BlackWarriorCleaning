@@ -19,7 +19,7 @@ function MyApp({ Component, pageProps }) {
         <meta property="og:image" content= "/assets/circle_logo_opengraph.png"/>
         <meta property="og:site_name" content="Black Warrior Cleaning Pros LLC" />
         <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-        <link rel="canonical" href="http://blackwarriorcleaningpros.com/" />
+        <link rel="canonical" href="https://blackwarriorcleaningpros.com/" />
       </Head>
 
       <CustomNavbar/>

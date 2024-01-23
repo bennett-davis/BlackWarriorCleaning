@@ -8,7 +8,7 @@ import Image from "next/image";
 export default function Contact () {
 
     const name = "Jacob Hulsey";
-    const title = "Cleaning Solutions Specialist";
+    const title = "Maintenance & Service Specialist";
 
     return (
     

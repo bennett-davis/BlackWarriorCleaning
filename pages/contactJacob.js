@@ -5,13 +5,10 @@ import Head from "next/head";
 import styles from '../styles/contact.module.scss'
 import Image from "next/image";
 
-
-
-
 export default function Contact () {
 
-    const name = "Gio Ramos";
-    const title = "Owner";
+    const name = "Jacob Hulsey";
+    const title = "Cleaning Solutions Specialist";
 
     return (
     
@@ -25,20 +22,20 @@ export default function Contact () {
                     <h3 style={{textAlign: "center", paddingBottom: "2rem"}}>{title}</h3>
                     
                         <div className={styles.contactImage}>
-                            <Image className={styles.profileImage}
-                                alt="Black Warrior Cleaning Pros Logo"
-                                src="/assets/GioProfile.jpg"
-                                quality={100}
-                                layout="fill"
-                                objectFit="cover"
-                            />
+                          <Image className={styles.profileImage}
+                            alt="Black Warrior Cleaning Pros Logo"
+                            src="/assets/JacobProfile.jpeg"
+                            quality={100}
+                            layout="fill"
+                            objectFit="cover"
+                          />
                         </div>
                     
                     
                     <div className={styles.buttonSpacing}>
-                        <Link href='assets/GiovanniRamos.vcf' download>
+                        <Link href='assets/JacobHulsey.vcf' download>
                             <div type="button" className={styles.addButton}>
-                            Add Contact
+                              Add Contact
                             </div>
                         </Link>
                     </div>
